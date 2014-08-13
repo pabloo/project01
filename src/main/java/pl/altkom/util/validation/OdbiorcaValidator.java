@@ -31,6 +31,5 @@ public class OdbiorcaValidator {
 			error.reject("odbiorca.mail", "Pole wymagane");
 		}
 		
-		
 	}
 }
