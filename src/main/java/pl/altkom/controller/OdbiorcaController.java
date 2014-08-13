@@ -32,7 +32,7 @@ public class OdbiorcaController {
 			model.addAttribute( "categories", prepareCategories() );
 			model.addAttribute( "phoneTypes", preparePhoneTypes() );
 			return FORM_VIEW;
-		}*/
+		}*/  
 				
 		return SUCCESS_VIEW;
 	}
