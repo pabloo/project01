@@ -10,7 +10,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-v
+
 import pl.altkom.projekt.model.Mail;
 import pl.altkom.util.validation.MailValidator;
 
@@ -32,7 +32,7 @@ private final static String FORM_VIEW = "addMailForm";
 
 	    @RequestMapping(method = RequestMethod.POST)
 	    public String submitForm(@ModelAttribute Mail mail, Errors errors, Model model) {
-	        new MailValidator().validate(mail, errors);
+	        // new MailValidator().validate(mail, errors);
 	        if (errors.hasErrors()) {
 	            return FORM_VIEW;
 	        }
