@@ -23,7 +23,7 @@ private final static String FORM_VIEW = "addMailForm";
 	
 	private final static String SUCCESS_VIEW = "home";
 	
-	
+	   
 	 @RequestMapping(method = RequestMethod.GET)
 	    public String setupForm(Model model) {
 	        model.addAttribute("mail", new Mail());
