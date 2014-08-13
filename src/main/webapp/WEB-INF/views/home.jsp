@@ -1,5 +1,4 @@
 <%@include file="./includes/common.jsp"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -141,7 +140,6 @@ ul.dropdown li:hover>ul {
 		<ul class="dropdown">
 			<li><a href="#">Odbiorcy</a>
 				<ul class="sub_menu">
-<<<<<<< HEAD
 					<li><a href="<c:url value="/dodajOdbiorce"/>">Dodaj
 							odbiorce</a></li>
 					<li><a href="<c:url value="/dodajMail"/>">Dodaj maila</a></li>
