@@ -9,6 +9,6 @@
 <ul>
 		<ul><a href="<c:url value="/dodajOdbiorce"/>" >Dodaj odbiorce</a></ul>
 		<ul><a href="<c:url value="/addMail.do"/>" >Dodaj maila</a></ul>
-</ul>
+</ul> 
 </body>
 </html>
