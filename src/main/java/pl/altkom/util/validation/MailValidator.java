@@ -9,22 +9,7 @@ import pl.altkom.util.StringUtils;
 
 public class MailValidator {
 
-	
-	public void validate( Odbiorca odbiorca, Errors errors ) {
-		if ( StringUtils.isEmpty( odbiorca.getImie() ) ) {
-			errors.rejectValue( "odbiorca.imie", "required" );
-		}
-		
-		if ( StringUtils.isEmpty( odbiorca.getNazwisko() ) ) {
-			errors.rejectValue( "odbiorca.nazwisko", "required" );
-		}
-		
-			if ( StringUtils.isEmpty( odbiorca.getMail() ) ) {
-				errors.rejectValue( "odbiorca.mail", "required" );
-			}
-			
-		}
-		
+
 	public void validate( Mail mail, Errors errors ) {
 		if ( StringUtils.isEmpty( mail.getNadawca() ) ) {
 			errors.rejectValue( "mail.nadawca", "required" );
