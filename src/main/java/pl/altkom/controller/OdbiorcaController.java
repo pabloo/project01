@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import pl.altkom.projekt.model.Odbiorca;
+import pl.altkom.util.validation.OdbiorcaValidator;
 
 @Controller
 @RequestMapping("/dodajOdbiorce")
@@ -26,13 +27,11 @@ public class OdbiorcaController {
 	@RequestMapping( method = RequestMethod.POST )
 	public String submitForm( @ModelAttribute Odbiorca odbiorca, Errors errors, Model model ) {
 		 
-		/*new EntryValidator().validate( entry, errors );
+		new OdbiorcaValidator().validate( odbiorca, errors );
 		
 		if ( errors.hasErrors() ) {
-			model.addAttribute( "categories", prepareCategories() );
-			model.addAttribute( "phoneTypes", preparePhoneTypes() );
 			return FORM_VIEW;
-		}*/  
+		} 
 				
 		return SUCCESS_VIEW;
 	}
