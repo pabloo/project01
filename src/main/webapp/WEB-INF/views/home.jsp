@@ -67,7 +67,7 @@ ul.dropdown li:hover > ul 			{ visibility: visible; }
 		<ul class="dropdown">
 			<li><a href="#">Odbiorcy</a>
 				<ul class="sub_menu">
-					<li><a href="#">Dodaj odbiorce</a></li>
+					<li><a href="/dodajOdbiorce">Dodaj odbiorce</a></li>
 					<li><a href="#">Usuń odbiorce</a>
 						<ul>
 							<li><a href="#">Zły odbiorca</a></li>
@@ -76,7 +76,7 @@ ul.dropdown li:hover > ul 			{ visibility: visible; }
 				</ul></li>
 			<li><a href="#">Mail</a>
 				<ul class="sub_menu">
-					<li><a href="#">Dodaj Mail</a></li>
+					<li><a href="/dodajMail">Dodaj Mail</a></li>
 					<li><a href="#">Usuń Mail</a></li>
 						<ul>
 							<li><a href="#">Zły mail</a></li>
