@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="pl.altkom.projekt">
+	<logger name="pl.altkom.project">
 		<level value="info" />
 	</logger>
 	
