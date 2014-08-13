@@ -14,28 +14,27 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import pl.altkom.projekt.model.Mail;
 import pl.altkom.util.validation.MailValidator;
 
-
 @Controller
-@RequestMapping( "/addMail.do" )
+@RequestMapping("/addMail.do")
 public class MailController {
-	
-private final static String FORM_VIEW = "addMailForm";
-	
-	private final static String SUCCESS_VIEW = "home";
-	
-	   
-	 @RequestMapping(method = RequestMethod.GET)
-	    public String setupForm(Model model) {
-	        model.addAttribute("mail", new Mail());
-	        return FORM_VIEW;
-	    }
 
-	    @RequestMapping(method = RequestMethod.POST)
-	    public String submitForm(@ModelAttribute Mail mail, Errors errors, Model model) {
-	        // new MailValidator().validate(mail, errors);
-	        if (errors.hasErrors()) {
-	            return FORM_VIEW;
-	        }
-	        return SUCCESS_VIEW;
-	    }
+	private final static String FORM_VIEW = "addMailForm";
+
+	private final static String SUCCESS_VIEW = "home";
+
+	@RequestMapping(method = RequestMethod.GET)
+	public String setupForm(Model model) {
+		model.addAttribute("mail", new Mail());
+		return FORM_VIEW;
 	}
+
+	@RequestMapping(method = RequestMethod.POST)
+	public String submitForm(@ModelAttribute Mail mail, Errors errors,
+			Model model) {
+		new MailValidator().validate(mail, errors);
+		if (errors.hasErrors()) {
+			return FORM_VIEW;
+		}
+		return SUCCESS_VIEW;
+	}
+}
