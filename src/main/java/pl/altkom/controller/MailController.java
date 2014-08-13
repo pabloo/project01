@@ -16,7 +16,7 @@ import pl.altkom.util.validation.MailValidator;
 
 
 @Controller
-@RequestMapping( "/addMail.do" )
+@RequestMapping( "/dodajMail" )
 public class MailController {
 	
 private final static String FORM_VIEW = "addMailForm";
