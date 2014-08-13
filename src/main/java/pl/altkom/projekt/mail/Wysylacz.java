@@ -55,6 +55,7 @@ public class Wysylacz {
 		m.setTekstWiadomosci("To jest tekst wiadomosci i ....");
 		m.setTemat("temat");
 		Wysylacz.wyslij(m);
+		
 		// message.setFrom("llekutek@gmail.com");
 		// message.setTo("llekutek@gmail.com");
 		// message.setSubject("Javacodegeeks email test");
