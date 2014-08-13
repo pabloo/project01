@@ -11,7 +11,7 @@ public class OdbiorcaValidator {
 	
 	public void validate(Odbiorca odbiorca, Errors error){
 		if(StringUtils.isEmpty(odbiorca.getImie())){
-			error.reject("odbiorca.imie", "Pole wymagane");
+			error.reject("odbiorca.imie", "required");
 		}
 		
 		if(StringUtils.isEmpty(odbiorca.getNazwisko())){

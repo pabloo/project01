@@ -4,6 +4,12 @@ import java.io.Serializable;
 
 public class Odbiorca implements Serializable {
 
+	@Override
+	public String toString() {
+		return "Odbiorca [imie=" + imie + ", nazwisko=" + nazwisko + ", mail="
+				+ mail + "]";
+	}
+
 	private String imie;
 	private String nazwisko;
 	private String mail;
