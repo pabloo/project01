@@ -141,17 +141,24 @@ ul.dropdown li:hover>ul {
 		<ul class="dropdown">
 			<li><a href="#">Odbiorcy</a>
 				<ul class="sub_menu">
+<<<<<<< HEAD
 					<li><a href="<c:url value="/dodajOdbiorce"/>">Dodaj
 							odbiorce</a></li>
 					<li><a href="<c:url value="/dodajMail"/>">Dodaj maila</a></li>
 					<li><a href="#">UsuÅ odbiorce</a> <!-- <ul>
 							<li><a href="#">ZÅy odbiorca</a></li>
+=======
+					<li><a href="/dodajOdbiorce">Dodaj odbiorce</a></li>
+					<li><a href="#">Usuń odbiorce</a>
+						<ul>
+							<li><a href="#">Zły odbiorca</a></li>
+>>>>>>> branch 'master' of https://github.com/lmrozek/project01.git
 							<li><a href="#">Dobry Odbiorca</a></li>
 						</ul></li> -->
 				</ul></li>
 			<li><a href="#">Mail</a>
 				<ul class="sub_menu">
-					<li><a href="#">Dodaj Mail</a></li>
+					<li><a href="/dodajMail">Dodaj Mail</a></li>
 					<li><a href="#">Usuń Mail</a></li>
 						<ul>
 							<li><a href="#">Zły mail</a></li>
