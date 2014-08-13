@@ -26,6 +26,7 @@ public class OdbiorcaValidator {
 		if(Character.isLowerCase(odbiorca.getNazwisko().charAt(0))){
 			error.reject("odbiorca.nazwisko", "Nazwisko z duzej litery");
 		}
+		
 		if(StringUtils.isEmpty(odbiorca.getMail())){
 			error.reject("odbiorca.mail", "Pole wymagane");
 		}
