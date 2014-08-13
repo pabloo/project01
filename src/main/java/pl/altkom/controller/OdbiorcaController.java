@@ -12,7 +12,7 @@ import pl.altkom.projekt.model.Odbiorca;
 @Controller
 @RequestMapping("/dodajOdbiorce")
 public class OdbiorcaController {
-	
+	 
 	private final static String FORM_VIEW = "dodajOdbiorce";
 	private final static String SUCCESS_VIEW = "home";
 
