@@ -1,67 +1,65 @@
 <%@ include file="./includes/common.jsp"%>
 
 <html>
+<head>
+
+<title>Insert title here</title>
+<style>
+.tabelka {
+	border-collapse: collapse;
+	background-color: #ffc;
+}
+
+.tabelka td {
+	border: 1px solid white;
+	padding: 3px;
+}
+</style>
+</head>
 <body>
 	<h1>Napisz maila</h1>
 	<form:form modelAttribute="mail">
 
-		<table border="1">
+		<table class="tabelka">
 			<tr>
-				<td><spring:message code="imie.label" /></td>
-				<td><form:input path="odbiorca.imie" /> <form:errors
-						path="odbiorca.imie" /></td>
+				<td><spring:message code="odbiorcy.label" /></td>
+				<td><form:input path="odbiorcy" /> <form:errors
+						path="odbiorcy" /></td>
 			</tr>
 
-			<tr>
-				<td><spring:message code="nazwisko.label" /></td>
-				<td><form:input path="odbiorca.nazwisko" /> <form:errors
-						path="odbiorca.nazwisko" /></td>
-			</tr>
-
-
-			<tr>
-				<td><spring:message code="mail.label" /></td>
-				<td><form:input path="odbiorca.mail" /> <form:errors
-						path="odbiorca.mail" /></td>
-			</tr>
 		</table>
 		<hr />
 
-		<table border="1">
+		<table class="tabelka">
 			<tr>
 				<td><spring:message code="nadawca.label" /></td>
-				<td><form:input path="mail.nadawca" /> <form:errors
-						path="mail.nadawca" /></td>
+				<td><form:input path="nadawca" /> <form:errors
+						path="nadawca" /></td>
 			</tr>
 
-			<tr>
-				<td><spring:message code="odbiorca.label" /></td>
-				<td><form:input path="mail.odbiorca" /> <form:errors
-						path="mail.odbiorca" /></td>
-			</tr>
 
 			<tr>
 				<td><spring:message code="temat.label" /></td>
-				<td><form:input path="mail.temat" /> <form:errors
-						path="mail.temat" /></td>
+				<td><form:input path="temat" /> <form:errors
+						path="temat" /></td>
 			</tr>
 
 			<tr>
 				<td><spring:message code="tekstWiadomosci.label" /></td>
-				<td><form:input path="mail.tekstWiadomosci" /> <form:errors
-						path="mail.tekstWiadomosci" /></td>
+				<td><form:input path="tekstWiadomosci" /> <form:errors
+						path="tekstWiadomosci" /></td>
 			</tr>
 
 			<tr>
 				<td><spring:message code="dataNadania.label" /></td>
-				<td><form:input path="mail.dataNadania" /> <form:errors
-						path="mail.dataNadania" /></td>
+				<td><form:input path="dataNadania" /> <form:errors
+						path="dataNadania" /></td>
 			</tr>
 
 
 		</table>
 		<hr />
-		<table border="1">
+		<table class="tabelka">
 			<tr>
 				<td><input type="submit"
 					value="<spring:message code="submit.label" />" colspan="2" /></td>
