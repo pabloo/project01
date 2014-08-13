@@ -25,7 +25,7 @@ public class OdbiorcaController {
 	
 	@RequestMapping( method = RequestMethod.POST )
 	public String submitForm( @ModelAttribute Odbiorca odbiorca, Errors errors, Model model ) {
-		
+		 
 		/*new EntryValidator().validate( entry, errors );
 		
 		if ( errors.hasErrors() ) {
