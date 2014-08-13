@@ -3,7 +3,7 @@
 <html>
 <body>
 	<h1>Napisz maila</h1>
-	<form:form modelAttribute="entry">
+	<form:form modelAttribute="mail">
 
 		<table border="1">
 			<tr>

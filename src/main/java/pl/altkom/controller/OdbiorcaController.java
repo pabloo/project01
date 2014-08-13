@@ -12,20 +12,17 @@ import pl.altkom.projekt.model.Odbiorca;
 @Controller
 @RequestMapping("/dodajOdbiorce")
 public class OdbiorcaController {
-	
-	private final static String FORM_VIEW = "dodajOdbiorce";
-	private final static String SUCCESS_VIEW = "home";
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String setupForm(Model model) {
 		model.addAttribute(new Odbiorca());
 		
-		return FORM_VIEW;
+		return "dodajOdbiorce";
 	}
 	
 	@RequestMapping( method = RequestMethod.POST )
 	public String submitForm( @ModelAttribute Odbiorca odbiorca, Errors errors, Model model ) {
-		 
+		
 		/*new EntryValidator().validate( entry, errors );
 		
 		if ( errors.hasErrors() ) {
@@ -34,6 +31,9 @@ public class OdbiorcaController {
 			return FORM_VIEW;
 		}*/
 		
-		return SUCCESS_VIEW;
+		/*phoneBookRepository.save( entry );
+		phoneBookRepository.logToSysout();*/
+		
+		return "home";
 	}
 }
