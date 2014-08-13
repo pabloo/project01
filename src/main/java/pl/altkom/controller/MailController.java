@@ -23,7 +23,7 @@ private final static String FORM_VIEW = "addMailForm";
 	
 	private final static String SUCCESS_VIEW = "home";
 	
-	   
+	
 	 @RequestMapping(method = RequestMethod.GET)
 	    public String setupForm(Model model) {
 	        model.addAttribute("mail", new Mail());
@@ -32,7 +32,7 @@ private final static String FORM_VIEW = "addMailForm";
 
 	    @RequestMapping(method = RequestMethod.POST)
 	    public String submitForm(@ModelAttribute Mail mail, Errors errors, Model model) {
-	        // new MailValidator().validate(mail, errors);
+	        new MailValidator().validate(mail, errors);
 	        if (errors.hasErrors()) {
 	            return FORM_VIEW;
 	        }
