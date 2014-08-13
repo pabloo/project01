@@ -19,7 +19,7 @@ import pl.altkom.util.validation.MailValidator;
 @RequestMapping( "/dodajMail" )
 public class MailController {
 	
-private final static String FORM_VIEW = "addMailForm";
+private final static String FORM_VIEW = "mailForm";
 	
 	private final static String SUCCESS_VIEW = "home";
 	
