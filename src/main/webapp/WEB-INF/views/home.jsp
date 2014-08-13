@@ -1,5 +1,5 @@
 <%@include file="./includes/common.jsp"%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -197,7 +197,7 @@ ul.dropdown li:hover>ul {
 					<li><a href="#">Od Kasi</a></li>
 					<li><a href="#">Od Pawła</a></li>
 					<li><a href="#">Od Tomka</a></li>					
-					<li><a href="odRobert.html">Od Roberta</a></li>					
+					<li><a target="_blank" href="<c:url value="./includes/odRobert.html"/>">Od Roberta</a></li>					
 				</ul></li>
 		</ul>
 
